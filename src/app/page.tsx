@@ -1,4 +1,4 @@
-import Home from "../pages/Home";
+import Home from "../views/Home";
 import { pageMeta } from "../lib/seo";
 
 export const metadata = pageMeta(
@@ -16,3 +16,4 @@ export const metadata = pageMeta(
 export default function Page() {
   return <Home />;
 }
+

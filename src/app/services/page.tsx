@@ -1,4 +1,4 @@
-import Services from "../../pages/Services";
+import Services from "../../views/Services";
 import { pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta(
@@ -13,3 +13,4 @@ export const metadata = pageMeta(
 export default function Page() {
   return <Services />;
 }
+

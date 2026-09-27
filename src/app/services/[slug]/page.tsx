@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import CategoryDetail from "../../../pages/CategoryDetail";
+import CategoryDetail from "../../../views/CategoryDetail";
 import { services } from "../../../data/site";
 
 /**

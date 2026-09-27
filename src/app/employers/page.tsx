@@ -1,4 +1,4 @@
-import Employers from "../../pages/Employers";
+import Employers from "../../views/Employers";
 import { pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta(
@@ -13,3 +13,4 @@ export const metadata = pageMeta(
 export default function Page() {
   return <Employers />;
 }
+

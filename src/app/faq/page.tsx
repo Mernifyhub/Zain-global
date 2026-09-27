@@ -1,4 +1,4 @@
-import Faq from "../../pages/Faq";
+import Faq from "../../views/Faq";
 import { pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta(
@@ -13,3 +13,4 @@ export const metadata = pageMeta(
 export default function Page() {
   return <Faq />;
 }
+

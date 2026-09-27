@@ -1,4 +1,4 @@
-import Contact from "../../pages/Contact";
+import Contact from "../../views/Contact";
 import { pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta(
@@ -13,3 +13,4 @@ export const metadata = pageMeta(
 export default function Page() {
   return <Contact />;
 }
+

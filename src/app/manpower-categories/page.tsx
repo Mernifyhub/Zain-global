@@ -1,4 +1,4 @@
-import Categories from "../../pages/Categories";
+import Categories from "../../views/Categories";
 import { pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta(
@@ -13,3 +13,4 @@ export const metadata = pageMeta(
 export default function Page() {
   return <Categories />;
 }
+

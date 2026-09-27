@@ -1,4 +1,4 @@
-import About from "../../pages/About";
+import About from "../../views/About";
 import { pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta(
@@ -13,3 +13,4 @@ export const metadata = pageMeta(
 export default function Page() {
   return <About />;
 }
+

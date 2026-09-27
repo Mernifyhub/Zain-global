@@ -1,4 +1,4 @@
-import JobSeekers from "../../pages/JobSeekers";
+import JobSeekers from "../../views/JobSeekers";
 import { pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta(
@@ -13,3 +13,4 @@ export const metadata = pageMeta(
 export default function Page() {
   return <JobSeekers />;
 }
+

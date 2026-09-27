@@ -1,4 +1,4 @@
-import { LegalPage } from "../../pages/Legal";
+import { LegalPage } from "../../views/Legal";
 import { pageMeta } from "../../lib/seo";
 
 export const metadata = pageMeta(
@@ -13,3 +13,4 @@ export const metadata = pageMeta(
 export default function Page() {
   return <LegalPage kind="terms" />;
 }
+
