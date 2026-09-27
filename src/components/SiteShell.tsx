@@ -6,36 +6,67 @@ import Footer from "./Footer";
 import FloatingActions from "./FloatingActions";
 
 /**
- * Shared application shell — top bar, header, page content, footer and the
- * floating contact actions. Consumed by:
- *   • app/layout.tsx    → the Next.js App Router (the real app)
- *   • src/preview.tsx   → sandbox-only static preview (safe to delete)
+ * Shared application shell
+ *
+ * Structure:
+ *   ScrollProgress
+ *   Header       -> sticky main navigation
+ *   Main content
+ *   Footer
+ *   Floating actions
  */
-export default function SiteShell({ children }: { children: ReactNode }) {
+export default function SiteShell({
+  children,
+}: {
+  children: ReactNode;
+}) {
   return (
-    <div className="flex min-h-screen flex-col overflow-x-hidden">
+    <div className="flex min-h-screen flex-col overflow-x-clip">
       <ScrollProgress />
+
       <Header />
-      <main className="flex-1">{children}</main>
+
+      <main className="flex-1">
+        {children}
+      </main>
+
       <Footer />
+
       <FloatingActions />
     </div>
   );
 }
 
-/** Thin gold reading-progress bar pinned under the browser edge. */
+/**
+ * Thin gold reading-progress bar pinned under the browser edge.
+ */
 function ScrollProgress() {
   useEffect(() => {
     const bar = document.getElementById("scroll-progress");
+
     const onScroll = () => {
       if (!bar) return;
+
       const el = document.documentElement;
+
       const max = el.scrollHeight - el.clientHeight;
-      bar.style.transform = `scaleX(${max > 0 ? el.scrollTop / max : 0})`;
+
+      const progress =
+        max > 0
+          ? el.scrollTop / max
+          : 0;
+
+      bar.style.transform = `scaleX(${progress})`;
     };
+
     onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
+
+    window.addEventListener("scroll", onScroll, {
+      passive: true,
+    });
+
     window.addEventListener("resize", onScroll);
+
     return () => {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
@@ -47,7 +78,9 @@ function ScrollProgress() {
       <div
         id="scroll-progress"
         className="gold-line h-full origin-left rtl:origin-right"
-        style={{ transform: "scaleX(0)" }}
+        style={{
+          transform: "scaleX(0)",
+        }}
       />
     </div>
   );

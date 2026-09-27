@@ -14,7 +14,7 @@
 export type L = { en: string; ar: string };
 
 export const company = {
-  name: { en: "Zain Global", ar: "زين جلوبال" },
+  name: { en: "Zain Global Services", ar: "زين جلوبال" },
   shortName: { en: "Zain", ar: "زين" },
   legalName: {
     en: "Zain Global Manpower & Workforce Services",
@@ -29,9 +29,9 @@ export const company = {
   /** Optional secondary landline — leave empty to hide it everywhere. */
   phone2: "",
   whatsapp: "966555267734",
-  email: "info@zainglobal.sa",
-  hrEmail: "careers@zainglobal.sa",
-  domain: "https://www.zainglobal.sa",
+  email: "info@zainglobalservices.com",
+  hrEmail: "careers@zainglobalservices.com",
+  domain: "https://www.zainglobalservices.com",
   address: {
     en: "King Fahd Road, Al Olaya District, Riyadh 12211, Saudi Arabia",
     ar: "طريق الملك فهد، حي العليا، الرياض 12211، المملكة العربية السعودية",

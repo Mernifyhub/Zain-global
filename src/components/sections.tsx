@@ -360,7 +360,7 @@ export function TrustSection({ tone = "muted" }: { tone?: "light" | "muted" | "d
         </div>
 
         {/* registrations / compliance placeholders */}
-        <Reveal delay={120}>
+        {/* <Reveal delay={120}>
           <div className="mt-8 overflow-hidden rounded-2xl border border-navy-200 bg-white">
             <div className="flex flex-col gap-1 border-b border-navy-100 bg-navy-50/60 px-6 py-4 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-2.5">
@@ -384,7 +384,7 @@ export function TrustSection({ tone = "muted" }: { tone?: "light" | "muted" | "d
               {t("trust.regNote")}
             </p>
           </div>
-        </Reveal>
+        </Reveal> */}
       </div>
     </Section>
   );

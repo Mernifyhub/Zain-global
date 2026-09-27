@@ -300,7 +300,7 @@ export function Logo({ tone = "dark", compact = false }: { tone?: "dark" | "ligh
       <span className="flex flex-col leading-none">
         <span
           className={cn(
-            "text-[17px] font-extrabold tracking-tight",
+            "text-[17px] font-extrabold tracking-tight whitespace-nowrap", // 👈 এখানে whitespace-nowrap যোগ করা হয়েছে
             tone === "dark" ? "text-navy-950" : "text-white",
           )}
         >
@@ -310,7 +310,7 @@ export function Logo({ tone = "dark", compact = false }: { tone?: "dark" | "ligh
         {!compact && (
           <span
             className={cn(
-              "mt-1 text-[10px] font-semibold uppercase tracking-[0.18em]",
+              "mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] whitespace-nowrap", // 👈 এখানেও যোগ করা হয়েছে
               tone === "dark" ? "text-navy-500" : "text-navy-200/70",
             )}
           >

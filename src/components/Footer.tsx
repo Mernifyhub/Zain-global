@@ -157,8 +157,8 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-
-        {/* registrations placeholder strip */}
+{/* 
+        registrations placeholder strip
         <div className="mt-14 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
           <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-gold-300">
             {t("trust.regTitle")}
@@ -172,7 +172,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="mt-4 text-[11.5px] text-navy-500">{t("ft.note")}</p>
-        </div>
+        </div> */}
       </div>
 
       {/* bottom bar */}
